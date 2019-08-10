@@ -1,4 +1,7 @@
 # Music-Downloader_TJS
+  
+**发布页面：https://github.com/messoer/Music-Downloader_TJS/releases**
+  
 使用KRKR引擎制作的音乐下载器，支持网易云音乐和QQ音乐两种音乐源，可在应用中切换  
 > **支持多码率的MP3和无损音质下载**  
 > **支持多码率的MV下载**  
