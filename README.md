@@ -1,5 +1,8 @@
 # Music-Downloader_TJS
 # 一夜回到解放前 凉凉
+API凉凉了，所以我所有组件都废了，现在在尝试着恢复一部分组件 
+网易云：暂不考虑恢复  
+QQ音乐：搜索（可用），专辑图片（可用），歌曲下载（不可用，计划恢复中），MV下载（恢复中），评论查看（不可用，未在计划中）  
   
 **发布页面：https://github.com/messoer/Music-Downloader_TJS/releases**
   
