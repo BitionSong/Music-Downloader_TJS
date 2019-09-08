@@ -1,12 +1,12 @@
 # Music-Downloader_TJS
   
-## 20190907 Hotfix4
-### QQ音乐服务组件版本更新到**1.5.1324**   
+## 20190908 Hotfix5
+### QQ音乐服务组件版本更新到**1.5.1532**   
 ### 网易云音乐服务组件版本更新到**0.2.2308**  
   
 网易云音乐：**搜索（可用），专辑图片（可用），LRC歌词（可用），歌曲下载（标准音质可用）**，MV下载（不可用），评论查看（不可用）  
   
-QQ音乐：**搜索（可用），专辑图片（可用），LRC歌词（可用）**，歌曲下载（不可用，计划恢复中），**MV下载（可用）**，评论查看（不可用）  
+QQ音乐：**搜索（可用），专辑图片（可用），LRC歌词（可用），歌曲下载（标准音质可用），MV下载（可用）**，评论查看（不可用）  
   
 **发布页面：https://github.com/messoer/Music-Downloader_TJS/releases**
   
@@ -44,4 +44,5 @@ Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有
 第一代 API https://api.hibai.com/ Copyright 2019 鼻子亲了脸  
 第二代 API https://api.bzqll.com/ Copyright 2019 鼻子亲了脸  
 第三代 API https://api.itooi.cn/ Copyright 2019 鼻子亲了脸  
-目前 使用了第三方API https://v1.itooi.cn Copyright 2019 鼻子亲了脸  
+第四代 API  https://v1.itooi.cn Copyright 2019 鼻子亲了脸  
+目前 使用了自己开发的API 接口由外部提供 Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
