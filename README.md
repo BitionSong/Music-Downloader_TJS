@@ -1,6 +1,19 @@
 # Music-Downloader_TJS
+
+# 感谢
+ * **bzqll**
+ * **小可爱**
+ * **khj小骨**
+ * **代码是什么东西**
+ * **我的好朋友WWWWWWW**
+ * **还有我最喜欢最可爱的小洪**
+  
+你们是我维持这个项目的支持和动力  
+如果你们有任何物质上的帮助或关于我的意见，请联系我（QQ1437576334），你的帮助或意见对我来说都是十分宝贵的  
+特别是关于服务器和域名类的帮助。
   
 ## 20190922 Hotfix6
+### 注意：最近服务器不稳定，网易云音乐源可能会经常失效，建议使用QQ音乐源  
 ### QQ音乐服务组件版本更新到**1.5.1533**   
 ### 网易云音乐服务组件版本更新到**0.2.2309**  
   
@@ -38,11 +51,11 @@ QQ音乐：**搜索（可用），专辑图片（可用），LRC歌词（可用�
 ~~暂时无法设置 _下载目录_ 和 _缓存目录_~~  
   
 ## 关于
-如果发现问题请联系邮箱：13058097081a@gmail.com  
+如果发现问题请联系邮箱：13058097081a@gmail.com 或 QQ：1437576334  
 Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
   
 第一代 API https://api.hibai.com/ Copyright 2019 鼻子亲了脸  
 第二代 API https://api.bzqll.com/ Copyright 2019 鼻子亲了脸  
 第三代 API https://api.itooi.cn/ Copyright 2019 鼻子亲了脸  
 第四代 API  https://v1.itooi.cn Copyright 2019 鼻子亲了脸  
-目前 使用了自己开发的API 接口由外部提供 Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
+目前 接口由外部提供 Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
