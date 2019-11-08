@@ -18,11 +18,11 @@
 //目前 使用了第三方 Binaryify/NeteaseCloudMusicApi https://github.com/Binaryify/NeteaseCloudMusicApi
 
 //========================================================================================
-var NEMSVersion = "0.2.2310";
-var NEMSVersionString = NEMSVersion + 'Released in 20191005';
+var NEMSVersion = "0.2.2314";
+var NEMSVersionString = NEMSVersion + 'Released in 20191108';
 
-var NEMHttpRequestVersion = "0.0.4";
-var NEMusicServiceVersion = "0.2.6";
+var NEMHttpRequestVersion = "0.6.4";
+var NEMusicServiceVersion = "0.2.8";
 
 try{
 	if (AUP.filelist !== void){
@@ -151,7 +151,7 @@ class NEMusicService{
 		}
 	}
 	var HRClass;
-	var URL_root = "http://156.238.13.215:10086/";
+	var URL_root = "http://www.ac130.tk:10086/";
 	var addressCheck = new RegExp('[\\\\/:*?\"<>|]','gi');
 	var returnSonglistTimer = new Timer(returnSonglistCheck,"");
 	returnSonglistTimer.invertal = 10;
@@ -197,7 +197,7 @@ class NEMusicService{
 		getSongListStatus = "UNINITIALIZED";
 		key_Word = System.urlencode(key_Word);
 		searchType = type + "s";
-		var url = 'http://156.238.13.215:10086/search?keywords='+key_Word+'&type='+type+'&limit='+num+'&offset='+page;
+		var url = 'http://www.ac130.tk:10086/search?keywords='+key_Word+'&type='+type+'&limit='+num+'&offset='+page;
 		HRClass.open("GET",url);
 		getSongListStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
@@ -310,7 +310,7 @@ class NEMusicService{
 
 	function getMusiclrc(song_mid ,save = false, filename = System.createUUID(), savePath = System.exePath + "Download"){
 		getLrcStatus = "UNINITIALIZED";
-		var url = "http://156.238.13.215:10086/lyric?id="+song_mid;
+		var url = "http://www.ac130.tk:10086/lyric?id="+song_mid;
 		Song_LrcSave = save;
 		filename = filename.replace(addressCheck,"_");
 		Song_LrcSaveFilename = filename;
@@ -335,7 +335,7 @@ class NEMusicService{
 		MusicDownload_url = "";
 		MusicDownload_filename = filename;
 		MusicDownload_savePath = savePath;
-		var url = "http://156.238.13.215:10086/song/url?id=" + song_mid + "&br=" + br * 1000;
+		var url = "http://www.ac130.tk:10086/song/url?id=" + song_mid + "&br=" + br * 1000;
 		HRClass.open("GET",url);
 		DownloadMusicStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
@@ -355,6 +355,8 @@ class NEMusicService{
 	//普通(48)	标准(96） 标准（128） 较高（192） 极高（320）
 	//无损（ape） 无损（flac）	Hi-Res(flac) DSD(dff)
 	function startMusicDownload( song_url = MusicDownload_url, filename = MusicDownload_filename, savePath = MusicDownload_savePath){
+		if ( song_url == void || song_url =="")
+			return Debug.message("下载连接不能为空，操作中止");
 		DownloadMusicStatus = "UNINITIALIZED 2";
 		var url = song_url;
 		HRClass.open("GET",url);
@@ -389,7 +391,7 @@ class NEMusicService{
 		MusicPicDownload_url = "";
 		MusicPicDownload_filename = filename;
 		MusicPicDownload_savePath = savePath;
-		var url = "http://156.238.13.215:10086/song/detail?ids="+song_mid;
+		var url = "http://www.ac130.tk:10086/song/detail?ids="+song_mid;
 		HRClass.open("GET",url);
 		DownloadMusicPicStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
@@ -407,6 +409,8 @@ class NEMusicService{
 	}
 
 	function startMusicPicDownload(picUrl = MusicPicDownload_url, filename = MusicPicDownload_filename, savePath = MusicPicDownload_savePath){
+		if ( picUrl == void || picUrl =="")
+			return Debug.message("下载连接不能为空，操作中止");
 		DownloadMusicPicStatus = "UNINITIALIZED 2";
 		var url = picUrl;
 		HRClass.open("GET",url);
@@ -450,7 +454,7 @@ class NEMusicService{
 		MVDownload_savePath = savePath;
 		MVDownload_r = r;
 		DownloadMVStatus = "UNINITIALIZED";
-		var url = 'http://156.238.13.215:10086/mv/url?id=' + mv_mid;
+		var url = 'http://www.ac130.tk:10086/mv/url?id=' + mv_mid;
 		HRClass.open("GET",url);
 		DownloadMVStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
@@ -469,8 +473,8 @@ class NEMusicService{
 	}
 
 	function startMVDownload( mv_url = MVDownload_MVUrl, filename = MVDownload_filename, savePath = MVDownload_savePath){
-		if ( mv_url == "" || typeof mv_url == void)
-			return Debug.message("MV下载连接不能为空，操作中止");
+		if ( mv_url == "" || mv_url == void)
+			return Debug.message("下载连接不能为空，操作中止");
 		DownloadMVStatus = "UNINITIALIZED 2";
 		var url = mv_url;
 		HRClass.open("GET",url);

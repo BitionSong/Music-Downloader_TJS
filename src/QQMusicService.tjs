@@ -34,11 +34,11 @@ QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨±ê×¼ÒôÖÊ¿ÉÓÃ£©£¬LRCÏÂÔØ£¨¿ÉÓÃ£©£¬MVÏÂÔØ£
 //Ä¿Ç° Ê¹ÓÃÁË×Ô¼º¿ª·¢µÄAPI ½Ó¿ÚÓÉÍâ²¿Ìá¹© Copyright (C) 2015 Ò»¸ö¶ş°ÙÎå2 All Rights Reserved.°æÈ¨ËùÓĞ
 
 //========================================================================================
-var QQMSVersion = "1.5.1534";
-var QQMSVersionString = QQMSVersion + 'Released in 20191012';
+var QQMSVersion = "1.5.1535";
+var QQMSVersionString = QQMSVersion + 'Released in 20191108';
 
 var QHttpRequestVersion = "0.6.4";
-var QQMusicServiceVersion = "0.11.5";
+var QQMusicServiceVersion = "0.11.6";
 
 try{
 	if (AUP.filelist !== void){
@@ -348,7 +348,7 @@ class QQMusicService{
 
 	function getMusiclrc(song_mid ,save = false, filename = System.createUUID(), savePath = System.exePath + "Download"){
 		getLrcStatus = "UNINITIALIZED";
-		var url = "http://156.238.13.215:10087/getLyric?songmid="+song_mid;
+		var url = "http://www.ac130.tk:10087/getLyric?songmid="+song_mid;
 		Song_LrcSave = save;
 		filename = filename.replace(addressCheck,"_");
 		Song_LrcSaveFilename = filename;
@@ -490,7 +490,7 @@ class QQMusicService{
 
 	function startMVDownload( mv_url = MVDownload_MVUrl, filename = MVDownload_filename, savePath = MVDownload_savePath){
 		if ( mv_url == "" || typeof mv_url == void)
-			return Debug.message("MVÏÂÔØÁ¬½Ó²»ÄÜÎª¿Õ£¬²Ù×÷ÖĞÖ¹");
+			return Debug.message("ÏÂÔØÁ¬½Ó²»ÄÜÎª¿Õ£¬²Ù×÷ÖĞÖ¹");
 		DownloadMVStatus = "UNINITIALIZED 2";
 		var url = mv_url;
 		HRClass.open("GET",url);
