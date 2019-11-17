@@ -18,11 +18,11 @@
 //目前 使用了第三方 Binaryify/NeteaseCloudMusicApi https://github.com/Binaryify/NeteaseCloudMusicApi
 
 //========================================================================================
-var NEMSVersion = "0.2.2314";
-var NEMSVersionString = NEMSVersion + 'Released in 20191108';
+var NEMSVersion = "0.2.2316";
+var NEMSVersionString = NEMSVersion + 'Released in 20191117';
 
 var NEMHttpRequestVersion = "0.6.4";
-var NEMusicServiceVersion = "0.2.8";
+var NEMusicServiceVersion = "0.2.9";
 
 try{
 	if (AUP.filelist !== void){
@@ -197,7 +197,7 @@ class NEMusicService{
 		getSongListStatus = "UNINITIALIZED";
 		key_Word = System.urlencode(key_Word);
 		searchType = type + "s";
-		var url = 'http://www.ac130.tk:10086/search?keywords='+key_Word+'&type='+type+'&limit='+num+'&offset='+page;
+		var url = 'http://www.ac130.tk:10086/search?keywords='+key_Word+'&type='+type+'&limit='+num+'&offset='+( page ) * num;
 		HRClass.open("GET",url);
 		getSongListStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
