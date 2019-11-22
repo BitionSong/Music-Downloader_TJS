@@ -48,4 +48,7 @@ KSoundPlayer Plugin API by khjxiaogu
 第二代 API https://api.bzqll.com/ Copyright 2019 鼻子亲了脸  
 第三代 API https://api.itooi.cn/ Copyright 2019 鼻子亲了脸  
 第四代 API  https://v1.itooi.cn Copyright 2019 鼻子亲了脸  
-目前 接口由外部提供 Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
+目前 接口由外部提供：  
+网易云API：https://github.com/Binaryify/NeteaseCloudMusicApi  
+QQ音乐API：https://github.com/Rain120/qq-music-api  
+Copyright (C) 2015 一个二百五2 All Rights Reserved.版权所有  
