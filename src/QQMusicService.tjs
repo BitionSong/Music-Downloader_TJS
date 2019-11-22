@@ -34,11 +34,11 @@ QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨±ê×¼ÒôÖÊ¿ÉÓÃ£©£¬LRCÏÂÔØ£¨¿ÉÓÃ£©£¬MVÏÂÔØ£
 //Ä¿Ç° Ê¹ÓÃÁË×Ô¼º¿ª·¢µÄAPI ½Ó¿ÚÓÉÍâ²¿Ìá¹© Copyright (C) 2015 Ò»¸ö¶ş°ÙÎå2 All Rights Reserved.°æÈ¨ËùÓĞ
 
 //========================================================================================
-var QQMSVersion = "1.5.1535";
-var QQMSVersionString = QQMSVersion + 'Released in 20191108';
+var QQMSVersion = "1.5.1537";
+var QQMSVersionString = QQMSVersion + 'Released in 20191123';
 
 var QHttpRequestVersion = "0.6.4";
-var QQMusicServiceVersion = "0.11.6";
+var QQMusicServiceVersion = "0.11.8";
 
 try{
 	if (AUP.filelist !== void){

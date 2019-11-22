@@ -18,11 +18,11 @@
 //目前 使用了第三方 Binaryify/NeteaseCloudMusicApi https://github.com/Binaryify/NeteaseCloudMusicApi
 
 //========================================================================================
-var NEMSVersion = "0.2.2316";
-var NEMSVersionString = NEMSVersion + 'Released in 20191117';
+var NEMSVersion = "0.2.2319";
+var NEMSVersionString = NEMSVersion + 'Released in 20191123';
 
 var NEMHttpRequestVersion = "0.6.4";
-var NEMusicServiceVersion = "0.2.9";
+var NEMusicServiceVersion = "0.3.0";
 
 try{
 	if (AUP.filelist !== void){
@@ -347,8 +347,12 @@ class NEMusicService{
 	function Checkmusicurl(){
 		if (HRClass.readyState == global.HttpRequest.LOADED && HRClass.HRGetData !== void){
 			MusicDownloadURLCheckTimer.enabled = 0;
-			MusicDownload_url = HRClass.HRGetDataJSON.data[0].url;
-			startMusicDownload();
+			try{
+				MusicDownload_url = HRClass.HRGetDataJSON.data[0].url;
+				startMusicDownload();
+			}catch(e){
+				Debug.message(e.message);
+			}
 		}
 	}
 
@@ -403,8 +407,12 @@ class NEMusicService{
 	function Checkpicurl(){
 		if (HRClass.readyState == global.HttpRequest.LOADED && HRClass.HRGetData !== void){
 			MusicPicDownloadURLCheckTimer.enabled = 0;
-			MusicPicDownload_url = HRClass.HRGetDataJSON.songs[0].al.picUrl;
-			startMusicPicDownload();
+			try{
+				MusicPicDownload_url = HRClass.HRGetDataJSON.songs[0].al.picUrl;
+				startMusicPicDownload();
+			}catch(e){
+				Debug.message(e.message);
+			}
 		}
 	}
 
@@ -466,9 +474,13 @@ class NEMusicService{
 	function getMVURLCheck(){
 		if (HRClass.readyState == global.HttpRequest.LOADED && HRClass.HRGetData !== void){
 			MVDownloadURLCheckTimer.enabled = 0;
-			MVDownload_MVUrl = HRClass.HRGetDataJSON.data.url;
-			Debug.message(MVDownload_MVUrl);
-			startMVDownload();
+			try{
+				MVDownload_MVUrl = HRClass.HRGetDataJSON.data.url;
+				Debug.message(MVDownload_MVUrl);
+				startMVDownload();
+			}catch(e){
+				Debug.message(e.message);
+			}
 		}
 	}
 
