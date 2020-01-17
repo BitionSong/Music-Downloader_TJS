@@ -6,20 +6,10 @@
 *****×¢Òâ£ºÊ¹ÓÃÁËhttprequest.dll¡¢json.dll¡¢systemEX.dll ÕâĞ©²å¼ş±ØĞë±»·ÅÈëÄ¿Â¼ÖĞ£¬·ñÔò»á±¨´í£¨±ØÑ¡£©*****
 *****×¢Òâ£ºÈç¹ûÓĞfstat.dll ¿ÉÒÔ»ñµÃ¸üºÃµÄÎÄ¼ş´¢´æÖ§³Ö£¨¿ÉÑ¡£©*****
 
-ÒÑ¾­È«²¿ÆôÓÃHttpsĞ­Òé£¬Ö§³ÖMP3£¨¶àÂëÂÊ)£¬flac£¬apeÏÂÔØ
-¸èÇúÏÂÔØ¿ÉÑ¡ÂëÂÊÀàĞÍ£¨²ÎÊı br£©£º48(±ê×¼) 96£¨¸ßÇå£© 320£¨¸ßÆ·ÖÊ£© flac(ÎŞËğÒôÖÊ) ape£¨Ñ¹ËõÎŞËğÒôÖÊ£©
+²¿·ÖÆôÓÃHttpsĞ­Òé£¬Ö§³ÖMP3£¨¶àÂëÂÊ£©£¬flac£¬apeÏÂÔØ
+¸èÇúÏÂÔØ¿ÉÑ¡ÂëÂÊÀàĞÍ£¨²ÎÊı br£©£º48£¨±ê×¼£© 96£¨¸ßÇå£© 320£¨¸ßÆ·ÖÊ£© flac£¨ÎŞËğÒôÖÊ£© ape£¨Ñ¹ËõÎŞËğÒôÖÊ£©
 
-20190830 Hotfix1
-1.ÓÉÓÚµÚÈı·½APIÖ®Ç°µÚÈı·½APIÂÉÊ¦º¯¾¯¸æ£¬µ¼ÖÂÖ®Ç°µÄ×é¼ş³ıËÑË÷¹¦ÄÜÍâÎŞ·¨Õı³£Ê¹ÓÃ
-¸üĞÂºó½â¾ö
-
-20190907 Hotfix2
-1.ÓÉÓÚÖ®Ç°µÚÈı·½APIÂÉÊ¦º¯Ô­Òò¹Ø±Õ
-QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨²»¿ÉÊ¹ÓÃ£©£¬LRCÏÂÔØ£¨»Ö¸´ÖĞ£©£¬MVÏÂÔØ£¨¿ÉÓÃ£©£¬×¨¼­Í¼Æ¬ÏÔÊ¾£¨¿ÉÓÃ£©
-
-20190907 Hotfix3
-1.ÓÉÓÚÖ®Ç°µÚÈı·½APIÂÉÊ¦º¯Ô­Òò¹Ø±Õ
-QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨²»¿ÉÊ¹ÓÃ£©£¬LRCÏÂÔØ£¨¿ÉÓÃ£©£¬MVÏÂÔØ£¨¿ÉÓÃ£©£¬×¨¼­Í¼Æ¬ÏÔÊ¾£¨¿ÉÓÃ£©
+×¢Òâ£ºÄ¿Ç°Ö»Ö§³Ö±ê×¼ÒôÖÊÏÂÔØ
 
 20190908 Hotfix5
 1.ÓÉÓÚÖ®Ç°µÚÈı·½APIÂÉÊ¦º¯Ô­Òò¹Ø±Õ
@@ -31,14 +21,14 @@ QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨±ê×¼ÒôÖÊ¿ÉÓÃ£©£¬LRCÏÂÔØ£¨¿ÉÓÃ£©£¬MVÏÂÔØ£
 //µÚ¶ş´ú API https://api.bzqll.com/ Copyright 2019 ±Ç×ÓÇ×ÁËÁ³
 //µÚÈı´ú API https://api.itooi.cn/ Copyright 2019 ±Ç×ÓÇ×ÁËÁ³
 //µÚËÄ´ú API  https://v1.itooi.cn Copyright 2019 ±Ç×ÓÇ×ÁËÁ³
-//Ä¿Ç° Ê¹ÓÃÁË×Ô¼º¿ª·¢µÄAPI ½Ó¿ÚÓÉÍâ²¿Ìá¹© Copyright (C) 2015 Ò»¸ö¶ş°ÙÎå2 All Rights Reserved.°æÈ¨ËùÓĞ
+//Ä¿Ç° ½Ó¿ÚÓÉÍâ²¿Ìá¹© Ê¹ÓÃÁËµÚÈı·½¿ªÔ´ÏîÄ¿ https://github.com/Rain120/qq-music-api
 
 //========================================================================================
-var QQMSVersion = "1.5.1537";
-var QQMSVersionString = QQMSVersion + 'Released in 20191123';
+var QQMSVersion = "1.5.1539";
+var QQMSVersionString = QQMSVersion + 'Released in 20200117';
 
 var QHttpRequestVersion = "0.6.4";
-var QQMusicServiceVersion = "0.11.8";
+var QQMusicServiceVersion = "0.11.9";
 
 try{
 	if (AUP.filelist !== void){
@@ -183,7 +173,7 @@ class QQMusicService{
 		}
 	}
 	var HRClass;
-	var URL_root = "http://156.238.13.48:3000/tencent/"; //·ÏÆúµÄURL
+	var API_URL_root = "http://api.ac130.tk:10087/";
 	var addressCheck = new RegExp('[\\\\/:*?\"<>|]','gi');
 	var returnSonglistTimer = new Timer(returnSonglistCheck,"");
 	returnSonglistTimer.invertal = 10;
@@ -348,7 +338,7 @@ class QQMusicService{
 
 	function getMusiclrc(song_mid ,save = false, filename = System.createUUID(), savePath = System.exePath + "Download"){
 		getLrcStatus = "UNINITIALIZED";
-		var url = "http://www.ac130.tk:10087/getLyric?songmid="+song_mid;
+		var url = API_URL_root + "getLyric?songmid="+song_mid;
 		Song_LrcSave = save;
 		filename = filename.replace(addressCheck,"_");
 		Song_LrcSaveFilename = filename;
@@ -361,8 +351,8 @@ class QQMusicService{
 		Debug.message("Url:" + url);
 	}
 
-	//ÆÕÍ¨(48)	±ê×¼(96£© ±ê×¼£¨128£© ½Ï¸ß£¨192£© ¼«¸ß£¨320£©
-	//ÎŞËğ£¨ape£© ÎŞËğ£¨flac£©	Hi-Res(flac) DSD(dff)
+	//ÆÕÍ¨£¨48)	±ê×¼£¨96£© ±ê×¼£¨128£© ½Ï¸ß£¨192£© ¼«¸ß£¨320£©
+	//ÎŞËğ£¨ape£© ÎŞËğ£¨flac£© Hi-Res£¨flac£© DSD£¨dff£©
 	function getMusicDownload(song_mid, filename = System.createUUID(), br = 320, savePath = System.exePath + "Download/"){
 		DownloadMusicStatus = "UNINITIALIZED";
 		//var url = URL_root + "url?id="+song_mid+"&quality="+br;
@@ -517,7 +507,7 @@ class QQMusicService{
 
 	function getViewsList( song_mid, page = 0, pageSize = 30){
 		getViewsListStatus = "UNINITIALIZED";
-		var url = URL_root + "comment/song?id=" + song_mid + "&page=" + page + "&pageSize=" + pageSize;
+		var url = API_URL_root + "comment/song?id=" + song_mid + "&page=" + page + "&pageSize=" + pageSize;
 		HRClass.open("GET",url);
 		getViewsListStatus = "OPEN";
 		HRClass.send(HRClass.HRGetData);
@@ -563,4 +553,4 @@ class QQMusicService{
 	}
 }
 
-return 1;
+return 1; //API³É¹¦±»¶ÁÈ¡
