@@ -24,11 +24,11 @@ QQÒôÀÖ²¿·Ö£º¸èÇúËÑË÷£¨¿ÉÓÃ£©£¬¸èÇúÏÂÔØ£¨±ê×¼ÒôÖÊ¿ÉÓÃ£©£¬LRCÏÂÔØ£¨¿ÉÓÃ£©£¬MVÏÂÔØ£
 //Ä¿Ç° ½Ó¿ÚÓÉÍâ²¿Ìá¹© Ê¹ÓÃÁËµÚÈı·½¿ªÔ´ÏîÄ¿ https://github.com/Rain120/qq-music-api
 
 //========================================================================================
-var QQMSVersion = "1.5.1539";
-var QQMSVersionString = QQMSVersion + 'Released in 20200117';
+var QQMSVersion = "1.5.1540";
+var QQMSVersionString = QQMSVersion + 'Released in 20200215';
 
 var QHttpRequestVersion = "0.6.4";
-var QQMusicServiceVersion = "0.11.9";
+var QQMusicServiceVersion = "0.12.0";
 
 try{
 	if (AUP.filelist !== void){
@@ -358,7 +358,7 @@ class QQMusicService{
 		//var url = URL_root + "url?id="+song_mid+"&quality="+br;
 		br = 128;
 		br = string( br );
-		var url = "https://cc0722.xyz/t/index.php?id=" + song_mid;
+		var url = "https://www.cc0722.xyz/t/index.php?id=" + song_mid;
 		HRClass.open("GET",url);
 		DownloadMusicStatus = "OPEN";
 		if(!Storages.isExistentStorage(savePath)){

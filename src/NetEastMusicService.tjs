@@ -186,9 +186,20 @@ class NEMusicService{
 	var DownloadMusicPicStatus = "UNINITIALIZED";
 	var DownloadMVStatus = "UNINITIALIZED";
 	var getViewsListStatus = "UNINITIALIZED";
+	var login_phoneStatus = "UNINITIALIZED";
 
 	function NEMusicService(HRClassName){
 		HRClass = HRClassName;
+	}
+
+	function login_phone( phone, password){
+		login_phoneStatus = "UNINITIALIZED";
+		var url = API_URL_root + "login/cellphone?phone=" + phone + "&password=" + password;
+		HRClass.open("GET",url);
+		login_phoneStatus = "OPEN";
+		HRClass.send(HRClass.HRGetData);
+		login_phoneStatus = "SEND";
+		Debug.message("Url:" + url);
 	}
 
 	//type = song singer album
